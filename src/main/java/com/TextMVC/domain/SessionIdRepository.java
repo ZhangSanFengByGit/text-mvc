@@ -1,10 +1,9 @@
 package com.TextMVC.domain;
 
-import reactor.core.publisher.Mono;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface SessionIdRepository {
+import java.util.Optional;
 
-    Mono<SessionId> findById(String id);
-
-    Mono<SessionId> save(SessionId sessionId);
+public interface SessionIdRepository extends JpaRepository<SessionId, Long> {
+    Optional<SessionId> findById(Long id);
 }

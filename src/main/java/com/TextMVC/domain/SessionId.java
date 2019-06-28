@@ -1,19 +1,17 @@
 package com.TextMVC.domain;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "sessionId")
 public class SessionId {
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     public SessionId(){}
 
-    public SessionId(String id){
-        this.id = id;
-    }
-
-    public String getId() {
+    public Long getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 }

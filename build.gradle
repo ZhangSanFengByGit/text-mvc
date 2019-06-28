@@ -30,16 +30,39 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+//    // tag::jetty[]
+//    compile("org.springframework.boot:spring-boot-starter-web") {
+//        exclude module: "spring-boot-starter-tomcat"
+//        exclude module: "spring-boot-starter-logging"
+//    }
+//    compile("org.springframework.boot:spring-boot-starter-jetty")
+//    // end::jetty[]
+//    // tag::actuator[]
+//    compile("org.springframework.boot:spring-boot-starter-cache")
+//    compile("org.springframework.boot:spring-boot-starter-actuator")
+//    compile("org.springframework.security:spring-security-web")
+//    compile("org.springframework.security:spring-security-config")
+//    compile("org.springframework.security.oauth:spring-security-oauth2")
+//    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+//    compile('org.springframework.boot:spring-boot-starter-log4j2')
+//    compile("org.springframework.boot:spring-boot-starter-data-redis")
+//    compile("com.h2database:h2")
+//    compile("io.projectreactor:reactor-bus")
+//    compile("org.apache.thrift:libthrift:0.10.0")
+//    compile("commons-io:commons-io:2.6")
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    // end::actuator[]
+//    compile("org.springframework.boot:spring-boot-starter-test")
+//    testCompile("junit:junit")
 
     compile("commons-io:commons-io:2.6")
     compile("com.h2database:h2")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-cache")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.apache.thrift:libthrift:0.10.0")
     compile("org.springframework.boot:spring-boot-devtools")
     compile("org.springframework.boot:spring-boot-starter-test")
-    compile('org.springframework.boot:spring-boot-starter-webflux')
-    compile('org.springframework.boot:spring-boot-starter-data-redis-reactive')
     testCompile("junit:junit")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile('io.projectreactor:reactor-test')
 }

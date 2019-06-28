@@ -19,7 +19,7 @@ public class EventDto {
         return text;
     }
 
-    public void setSessionId(String session) {
+    public void setSession(String session) {
         this.sessionId = session;
     }
 

@@ -2,8 +2,6 @@ package com.TextMVC.service.thrift;
 
 import com.external.vispeech.SpeechOperator;
 import com.external.vnluservice.NLUOperator;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocolFactory;
 import org.apache.thrift.transport.TSocket;
@@ -11,7 +9,6 @@ import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
 
 public class ThriftClient {
-    private final Logger logger = LogManager.getLogger(ThriftClient.class);
 
     private final String host = "172.16.113.207"; // "localhost"
 
